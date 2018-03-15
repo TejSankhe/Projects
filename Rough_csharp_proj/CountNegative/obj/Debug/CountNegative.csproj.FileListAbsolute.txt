@@ -1,0 +1,6 @@
+C:\WorkArea\Rough_csharp_proj\CountNegative\bin\Debug\CountNegative.exe.config
+C:\WorkArea\Rough_csharp_proj\CountNegative\bin\Debug\CountNegative.exe
+C:\WorkArea\Rough_csharp_proj\CountNegative\bin\Debug\CountNegative.pdb
+C:\WorkArea\Rough_csharp_proj\CountNegative\obj\Debug\CountNegative.exe
+C:\WorkArea\Rough_csharp_proj\CountNegative\obj\Debug\CountNegative.pdb
+C:\WorkArea\Rough_csharp_proj\CountNegative\obj\Debug\CountNegative.csprojResolveAssemblyReference.cache

@@ -1,0 +1,33 @@
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe.config
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\EmailBody.txt
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Employees_MI.csv
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Letter_Format.docx
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.pdb
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.exe
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.pdb
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.csprojResolveAssemblyReference.cache
+D:\src\Diebold\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Signature.jpg
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\EmailBody.txt
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Employees_MI.csv
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Employees_MI_NonPromo.csv
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Letter_Format.docx
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Letter_Format_NonPromo.docx
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe.config
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.pdb
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.exe
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.pdb
+C:\Users\jainn4\Downloads\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.csprojResolveAssemblyReference.cache
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\EmailBody.txt
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Employees_MI.csv
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Employees_MI_NonPromo.csv
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Letter_Format.docx
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\resources\Letter_Format_NonPromo.docx
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe.config
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.exe
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\Appraisal_Email_Automation.pdb
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.exe
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\obj\Debug\Appraisal_Email_Automation.pdb
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\PdfSharp.dll
+C:\NitinJain_jainn4\Downloads\Problem specifics\MI Automation\fresh\Appraisal_Email_Automation\Appraisal_Email_Automation\bin\Debug\de\PdfSharp.resources.dll

@@ -1,0 +1,8 @@
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\bin\Debug\Rough_csharp_proj.exe.config
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\bin\Debug\Rough_csharp_proj.exe
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\bin\Debug\Rough_csharp_proj.pdb
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\obj\Debug\Rough_csharp_proj.exe
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\obj\Debug\Rough_csharp_proj.pdb
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\bin\Debug\Jil.dll
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\obj\Debug\Rough_csharp_proj.csprojResolveAssemblyReference.cache
+C:\WorkArea\Rough_csharp_proj\Rough_csharp_proj\bin\Debug\Sigil.dll

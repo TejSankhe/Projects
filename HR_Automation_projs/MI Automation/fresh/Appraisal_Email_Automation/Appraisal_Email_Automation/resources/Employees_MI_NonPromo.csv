@@ -1,0 +1,3 @@
+Oracle Id,Emp Code,First Name,Last Name,Vertical,Full Name,Designation,Email Id,Org, ABP Rounded Up ,Basic Salary,House Rent Allowance,Fitment Allowance #,ANNUAL BASE PAY (a),Target Incentive % of Annual Base Pay,ANNUAL INCENTIVE AT TARGET *(b),ANNUAL TOTAL TARGET COMPENSATION (c= a+b), Basic Ratio 
+777777,IDC 001,BNM,BFG,IDC,BNM BFG,Senior Software Engineer,Vishal.gautam@diebold.com,Raj Janwadkar,809500,323800,161900,323800,809500,0%,-,809500,pwd
+888888,IDC 002,BVC,GHJ,IDC,BVC GHJ,Senior Team Lead,Vishal.gautam@diebold.com,Raj Janwadkar,2407000,962800,481400,962800,2407000,0%,-,2407000,pwd

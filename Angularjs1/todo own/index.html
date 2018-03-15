@@ -1,0 +1,29 @@
+<html>
+<style>
+.strikeclass
+{
+	text-decoration: line-through;
+}
+.nostrikeclass
+{
+	text-decoration: none;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<body ng-app="app" >
+<center>
+<h1>Todo List<h1>
+<div ng-controller="ToDoController as todoc">
+<input type="text" ng-model="todoc.task" ng-keyup="$event.keyCode == 13 ? todoc.addtask() : null"> 
+<br><br>
+ <ui-view></ui-view>
+ <button ui-sref="button1">All</button>
+<button ui-sref="button2">Active</button>
+<button ui-sref="button3">Complete</button>
+</center>
+</body>
+</html>

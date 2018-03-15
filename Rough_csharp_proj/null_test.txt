@@ -1,0 +1,16 @@
+/// <summary>
+      ///  Event Handler for Message when messageType is LOG_ERROR and message info data is null.
+      /// </summary>
+      [TestMethod]
+      [ExpectedException(typeof(RuntimeBinderException))]
+      public void XpressionContainer_HandleMessage_MessageInfo_Data_Null()
+      {
+         MessageConstant messageType = MessageConstant.LOG_ERROR;
+         MessageInfo messageInfo = new MessageInfo() { Data = null };
+
+         XpressionContainer xpressionContainer = new XpressionContainer(this.logger.Object);
+         xpressionContainer.HandleMessage(messageType, messageInfo);
+
+         this.logger.Verify(m => m.LogLine(It.IsAny<string>(), It.IsAny<Logger.Severity>()), Times.Once());
+         Assert.AreEqual(this.errorMsg, null);
+      }

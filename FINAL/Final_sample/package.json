@@ -1,0 +1,14 @@
+{
+  "name": "test-cisco",
+  "main": "http://localhost:8000/#/",
+    "window":
+    {
+        "toolbar": false,
+        "frame" : false,
+    "hieght":600,
+         "width":600,
+     "always_on_top":true,
+     "resizable":false
+    }
+}
+

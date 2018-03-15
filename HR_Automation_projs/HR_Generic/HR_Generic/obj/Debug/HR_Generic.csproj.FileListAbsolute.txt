@@ -1,0 +1,10 @@
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\bin\Debug\HR_Generic.exe.config
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\bin\Debug\HR_Generic.exe
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\bin\Debug\HR_Generic.pdb
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.csprojResolveAssemblyReference.cache
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.csproj.ResolveComReference.cache
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.Form1.resources
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.Properties.Resources.resources
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.csproj.GenerateResource.Cache
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.exe
+C:\WORK\HR_Automation_projs\HR_Generic\HR_Generic\obj\Debug\HR_Generic.pdb

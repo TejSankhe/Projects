@@ -1,0 +1,7 @@
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\bin\Debug\sample_report_app.exe.config
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\bin\Debug\sample_report_app.exe
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\bin\Debug\sample_report_app.pdb
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\obj\Debug\sample_report_app.csprojResolveAssemblyReference.cache
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\obj\Debug\sample_report_app.exe
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\obj\Debug\sample_report_app.pdb
+C:\WORK\HR_Automation_projs\Reports\sample_report_app\sample_report_app\obj\Debug\sample_report_app.csproj.ResolveComReference.cache

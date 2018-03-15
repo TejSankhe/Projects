@@ -1,0 +1,17 @@
+﻿<html>
+<body>
+<div align="justify" style="margin: 0px;"><span style="font-size: 9pt;"><font face="Arial,sans-serif">
+Hi {Name},
+<br /><br />
+In recognition of your performance in year 2016 and your anticipated future contributions; we are pleased to inform
+you of the following changes in your compensation, effective March 1, 2017.
+<br /><br />
+Please find attached the your compensation letter, Kindly submit a signed copy of the letter to HR on or before 10-May-2017.
+<br /><br />
+The payout of the same will happen in April 2017 salary.
+<br /><br />
+In-case of any queries to contact the undersigned.
+<br /><br />
+</font></span></div>
+</html>
+</body>

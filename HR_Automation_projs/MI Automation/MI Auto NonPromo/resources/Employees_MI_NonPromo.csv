@@ -1,0 +1,3 @@
+Oracle Id,Emp Code,First Name,Last Name,Vertical,Full Name,Designation,Email Id,Org, ABP Rounded Up ,Basic Salary,House Rent Allowance,Fitment Allowance #,ANNUAL BASE PAY (a),Target Incentive % of Annual Base Pay,ANNUAL INCENTIVE AT TARGET *(b),ANNUAL TOTAL TARGET COMPENSATION (c= a+b), Basic Ratio 
+5555,IDC003,BC,NM,IDC Others,BC NM,Lead Engineer,nitin.jain2@dieboldnixdorf.com,Gromley Neil C,1960500,784200,392100,784200,1960500,NA, -   ,1960500,40%
+6666,IDC004,BN,MJ,IDC Others,BN MJ,Product Manager,vishal.gautam@dieboldnixdorf.com,Heather Gibbins,3310500,1324200,662100,1324200,3310500,15.00%,496575,3807075,40%
