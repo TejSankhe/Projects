@@ -1,8 +1,0 @@
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\bin\Debug\BankTests.dll
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\bin\Debug\BankTests.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\bin\Debug\Bank.dll
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\bin\Debug\Bank.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\obj\Debug\BankTests.dll
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\obj\Debug\BankTests.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\BankTests\obj\Debug\BankTests.csprojResolveAssemblyReference.cache

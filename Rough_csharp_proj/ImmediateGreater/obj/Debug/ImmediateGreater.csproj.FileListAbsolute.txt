@@ -1,6 +1,0 @@
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\bin\Debug\ImmediateGreater.exe.config
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\bin\Debug\ImmediateGreater.exe
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\bin\Debug\ImmediateGreater.pdb
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\obj\Debug\ImmediateGreater.exe
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\obj\Debug\ImmediateGreater.pdb
-C:\WorkArea\Rough_csharp_proj\ImmediateGreater\obj\Debug\ImmediateGreater.csprojResolveAssemblyReference.cache

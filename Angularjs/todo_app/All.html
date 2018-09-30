@@ -1,0 +1,6 @@
+<h1>All</h1>
+<div ng-repeat="task in todoc.list track by $index">
+<input class="ab" type="checkbox" ng-click="todoc.d($index)" ><span  ng-class="todoc.s[$index] ? 'strikeclass' : 'nostrikeclass'">{{task.name}}</span></input>
+<!-- <cance1text ng-click="todoc.ChangeSetValue(task)"><input type="checkbox">{{task.name}}{{task.set}}</input></cance1text> -->
+<button ng-click="todoc.removetask($index)">Remove</button>
+</div>

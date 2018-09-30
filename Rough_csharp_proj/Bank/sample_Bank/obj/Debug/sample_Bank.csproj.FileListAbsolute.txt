@@ -1,8 +1,0 @@
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\bin\Debug\sample_Bank.exe.config
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\bin\Debug\sample_Bank.exe
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\bin\Debug\sample_Bank.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\bin\Debug\Bank.dll
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\bin\Debug\Bank.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\obj\Debug\sample_Bank.exe
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\obj\Debug\sample_Bank.pdb
-C:\WorkArea\Rough_csharp_proj\Bank\sample_Bank\obj\Debug\sample_Bank.csprojResolveAssemblyReference.cache
