@@ -7,8 +7,39 @@ package entities;
 
 /**
  *
- * @author harshalneelkamal
+ * @author samartha
  */
 public class SalesPerson {
+    int id;
+    int totalItemSold;
+    int totalpriceWRTTarget;
+
+    public SalesPerson(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getTotalItemSold() {
+        return totalItemSold;
+    }
+
+    public void setTotalItemSold(int totalItemSold) {
+        this.totalItemSold = totalItemSold;
+    }
+
+    public int getTotalpriceWRTTarget() {
+        return totalpriceWRTTarget;
+    }
+
+    public void setTotalpriceWRTTarget(int totalpriceWRTTarget) {
+        this.totalpriceWRTTarget = totalpriceWRTTarget;
+    }
     
 }

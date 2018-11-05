@@ -7,42 +7,8 @@ package entities;
 
 /**
  *
- * @author harshalneelkamal
+ * @author samartha
  */
 public class Item {
-    int productId;
-    int salesPrice;
-    int quantity;
-
-    public Item(int productId, int salesPrice, int quantity) {
-        this.productId = productId;
-        this.salesPrice = salesPrice;
-        this.quantity = quantity;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
-    }
-
-    public int getSalesPrice() {
-        return salesPrice;
-    }
-
-    public void setSalesPrice(int salesPrice) {
-        this.salesPrice = salesPrice;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-    
     
 }

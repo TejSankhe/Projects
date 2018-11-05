@@ -10,5 +10,36 @@ package entities;
  * @author harshalneelkamal
  */
 public class Customer {
+    int id;
+    long totalItemBought;
+    double totalPriceOfItemBought;
+
+    public Customer(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public long getTotalItemBought() {
+        return totalItemBought;
+    }
+
+    public void setTotalItemBought(long totalItemBought) {
+        this.totalItemBought = totalItemBought;
+    }
+
+    public double getTotalPriceOfItemBought() {
+        return totalPriceOfItemBought;
+    }
+
+    public void setTotalPriceOfItemBought(double totalPriceOfItemBought) {
+        this.totalPriceOfItemBought = totalPriceOfItemBought;
+    }
     
 }

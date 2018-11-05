@@ -7,7 +7,7 @@ package entities;
 
 /**
  *
- * @author harshalneelkamal
+ * @author samartha
  */
 public class Product {
     
