@@ -12,7 +12,7 @@ package entities;
 public class SalesPerson {
     private int id;
     private int totalItemSold;
-    private int totalpriceWRTTarget;
+    private double totalpriceWRTTarget;
 
     public SalesPerson(int id) {
         this.id = id;
@@ -34,11 +34,11 @@ public class SalesPerson {
         this.totalItemSold = totalItemSold;
     }
 
-    public int getTotalpriceWRTTarget() {
+    public double getTotalpriceWRTTarget() {
         return totalpriceWRTTarget;
     }
 
-    public void setTotalpriceWRTTarget(int totalpriceWRTTarget) {
+    public void setTotalpriceWRTTarget(double totalpriceWRTTarget) {
         this.totalpriceWRTTarget = totalpriceWRTTarget;
     }
     

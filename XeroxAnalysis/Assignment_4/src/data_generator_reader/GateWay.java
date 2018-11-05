@@ -34,6 +34,7 @@ public class GateWay {
         }
         Map<Integer, SalesPerson> salespersonList = DataStore.getInstance().getSalesPerson();
         Map<Integer, Customer> customers = DataStore.getInstance().getCustomers();
+        Item item;
         while((orderRow = orderReader.getNextRow()) != null){
             int producId=Integer.parseInt(orderRow[2]);
             Product pro= products.get(producId);
@@ -41,21 +42,28 @@ public class GateWay {
             pro.setPopularity(tempPopularity);
             
             if(orders.containsKey(Integer.parseInt(orderRow[0]))){
-            Item item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
+            item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
             orders.get(Integer.parseInt(orderRow[0])).getItems().add(item);
             }
             else{
             ArrayList<Item> itemsList = new ArrayList<>();
-            Item item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
-            Customer customer = new Customer(Integer.parseInt(orderRow[5]));
-            SalesPerson salesPerson= new SalesPerson((Integer.parseInt(orderRow[4])));
+            item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
             itemsList.add(item);
             Order order = new Order(Integer.parseInt(orderRow[1]),itemsList,Integer.parseInt(orderRow[5]));
             orders.put(Integer.parseInt(orderRow[0]), order);
+            }
+            Customer customer = new Customer(Integer.parseInt(orderRow[5]));
+            SalesPerson salesPerson= new SalesPerson((Integer.parseInt(orderRow[4])));
+            double targetprice = products.get(Integer.parseInt(orderRow[2])).getTarget_price();
+            double salesPrice = Double.parseDouble(orderRow[6]);
+            double priceWRTTarget = salesPrice-targetprice;
+            double totalpriceWRTTarget = priceWRTTarget+salesPerson.getTotalpriceWRTTarget();
+            salesPerson.setTotalpriceWRTTarget(totalpriceWRTTarget);
+            int totalItemSold = salesPerson.getTotalItemSold()+Integer.parseInt(orderRow[3]);
+            salesPerson.setTotalItemSold(totalItemSold);
             items.put(Integer.parseInt(orderRow[1]), item); 
             salespersonList.put(Integer.parseInt(orderRow[4]), salesPerson);
             customers.put(Integer.parseInt(orderRow[5]), customer);
-            }
         }
             
     }
