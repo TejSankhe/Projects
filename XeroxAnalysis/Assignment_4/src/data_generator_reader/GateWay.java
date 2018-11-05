@@ -75,8 +75,15 @@ public class GateWay {
             customer.setTotalItemBought(totalItemBought);
             customer.setTotalPriceOfItemBought(totalPriceOfItemBought);
             customers.put(Integer.parseInt(orderRow[5]), customer);
+            
+            //calculate total revenue
+            double minPriceOfProduct = products.get(Integer.parseInt(orderRow[2])).getMin_price();
+            double revenue = Integer.parseInt(orderRow[6])- minPriceOfProduct>0?Integer.parseInt(orderRow[6])- minPriceOfProduct:0;
+            double totalRevenue = DataStore.getInstance().getTotalRevenue()+revenue;
+            DataStore.getInstance().setTotalRevenue(totalRevenue);
         }
         AnalysisHelper analysisHelper= new AnalysisHelper();
+        analysisHelper.getThreeMostPopularProducts();
         analysisHelper.getThreeMostPopularCustomers();
         analysisHelper.getTopThreeSalesPerson();
         analysisHelper.getTotalRevenueForTheYear();

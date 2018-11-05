@@ -25,6 +25,15 @@ public class DataStore {
     private Map<Integer, Item> items;
     private Map<Integer, Customer> customers;
     private Map<Integer, SalesPerson> salesPerson;
+    private double totalRevenue;
+
+    public double getTotalRevenue() {
+        return totalRevenue;
+    }
+
+    public void setTotalRevenue(double totalRevenue) {
+        this.totalRevenue = totalRevenue;
+    }
 
     public void setCustomers(Map<Integer, Customer> customers) {
         this.customers = customers;

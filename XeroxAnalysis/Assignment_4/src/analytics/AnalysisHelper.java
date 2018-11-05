@@ -31,8 +31,8 @@ public class AnalysisHelper {
             }
 
         });
+        System.out.println("Top 3 most popular Products");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Top 3 most popular Products");
             System.out.println(productList.get(i).getId());
         }
     }
@@ -41,24 +41,15 @@ public class AnalysisHelper {
 
         Map<Integer, Customer> customers = DataStore.getInstance().getCustomers();
         List<Customer> customerList = new ArrayList(customers.values());
-        for (Customer cust : customerList) {
-            System.out.println("Cust Id: " + cust.getId() + "Cust items" + cust.getTotalItemBought() + "Price" + cust.getTotalPriceOfItemBought());
-        }
         customerList.sort((Customer o1, Customer o2) -> (int) (o2.getTotalItemBought() - o1.getTotalItemBought()));
-
-        System.out.println("-----------------------------------------------------");
-        for (Customer cust : customerList) {
-            System.out.println("Cust Id: " + cust.getId() + "Cust items" + cust.getTotalItemBought());
-        }
-
+        System.out.println("Top 3 most popular Customers as per Total items bought");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Top 3 most popular Customers as per Total items bought");
             System.out.println(customerList.get(i).getId());
         }
         customerList.sort((Customer o1, Customer o2) -> (int) (o2.getTotalPriceOfItemBought() - o1.getTotalPriceOfItemBought()));
-
+        
+        System.out.println("Top 3 most popular Customers as per total price of items bought");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Top 3 most popular Customers as per total price of items bought");
             System.out.println(customerList.get(i).getId());
         }
     }
@@ -66,25 +57,21 @@ public class AnalysisHelper {
 
         Map<Integer, SalesPerson> salesPerson = DataStore.getInstance().getSalesPerson();
         List<SalesPerson> salesList = new ArrayList(salesPerson.values());
-       /* for (Customer cust : salesList) {
-            System.out.println("Cust Id: " + cust.getId() + "Cust items" + cust.getTotalItemBought() + "Price" + cust.getTotalPriceOfItemBought());
-        }*/
         salesList.sort((SalesPerson o1, SalesPerson o2) ->  (int) (o2.getTotalpriceWRTTarget()- o1.getTotalpriceWRTTarget()));
-
-        System.out.println("-----------------------------------------------------");
-        /*for (Customer cust : customerList) {
-            System.out.println("Cust Id: " + cust.getId() + "Cust items" + cust.getTotalItemBought());
-        }*/
-
+        System.out.println("Top 3 most popular Salesperson as per crossing target price");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Top 3 most popular Salesperson as per crossing target price");
             System.out.println(salesList.get(i).getId());
         }
         salesList.sort((SalesPerson o1, SalesPerson o2) ->  (int) (o2.getTotalItemSold()- o1.getTotalItemSold()));
-
+        
+        System.out.println("Top 3 most popular SalesPerson as per items sold");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Top 3 most popular SalesPerson as per items sold");
             System.out.println(salesList.get(i).getId());
         }
+    }
+    
+    public void getTotalRevenueForTheYear(){
+        System.out.println("Total revenue = "+DataStore.getInstance().getTotalRevenue());
+        
     }
 }
