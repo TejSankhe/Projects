@@ -6,6 +6,7 @@
 package analytics;
 
 import common.DataStore;
+import entities.Customer;
 import entities.Product;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -36,7 +37,9 @@ public class AnalysisHelper  {
             System.out.println("Top 3 most popular Products");
             System.out.println(productList.get(0).getId());
         }
-        //listDevs.sort((Developer o1, Developer o2)->o1.getAge()-o2.getAge());
+        Map<Integer, Customer> customers= DataStore.getInstance().getCustomers(); 
+        List<Customer> customerList= (ArrayList<Customer>)customers.values();
+        //customerList.sort((Customer o1, Customer o2)->o2.getTotalItemBought()-o1.getTotalItemBought());
     }
     
 }
