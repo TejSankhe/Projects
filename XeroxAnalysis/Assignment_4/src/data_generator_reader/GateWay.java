@@ -36,12 +36,10 @@ public class GateWay {
         String[] prodRow;
         Map<Integer, Product> products= DataStore.getInstance().getProducts();
         while((prodRow = productReader.getNextRow()) != null){
-            for (String row1 : prodRow) {
-                //Product newProduct= new Product();
-                //System.out.println());
-                
+                Product newProduct= new Product(Integer.parseInt(prodRow[0]),Integer.parseInt(prodRow[1]),Integer.parseInt(prodRow[2]),Integer.parseInt(prodRow[3]));
+                 products.put(Integer.parseInt(prodRow[0]), newProduct);
         }
-        }
+        
     }
 
     
