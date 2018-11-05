@@ -54,7 +54,8 @@ public class GateWay {
             Order order = new Order(Integer.parseInt(orderRow[1]),itemsList,Integer.parseInt(orderRow[5]));
             orders.put(Integer.parseInt(orderRow[0]), order);
             }
-            Customer customer = new Customer(Integer.parseInt(orderRow[5]));
+            items.put(Integer.parseInt(orderRow[1]), item);
+            // calculating sales person customer parameters
             SalesPerson salesPerson= new SalesPerson((Integer.parseInt(orderRow[4])));
             double targetprice = products.get(Integer.parseInt(orderRow[2])).getTarget_price();
             double salesPrice = Double.parseDouble(orderRow[6]);
@@ -63,8 +64,14 @@ public class GateWay {
             salesPerson.setTotalpriceWRTTarget(totalpriceWRTTarget);
             int totalItemSold = salesPerson.getTotalItemSold()+Integer.parseInt(orderRow[3]);
             salesPerson.setTotalItemSold(totalItemSold);
-            items.put(Integer.parseInt(orderRow[1]), item); 
             salespersonList.put(Integer.parseInt(orderRow[4]), salesPerson);
+            
+            // calculating customer parameters
+            Customer customer = new Customer(Integer.parseInt(orderRow[5]));
+            long totalItemBought = customer.getTotalItemBought()+Integer.parseInt(orderRow[3]);
+            double totalPriceOfItemBought = customer.getTotalPriceOfItemBought()+Integer.parseInt(orderRow[3])*Integer.parseInt(orderRow[6]);
+            customer.setTotalItemBought(totalItemBought);
+            customer.setTotalPriceOfItemBought(totalPriceOfItemBought);
             customers.put(Integer.parseInt(orderRow[5]), customer);
         }
         AnalysisHelper analysisHelper= new AnalysisHelper();
