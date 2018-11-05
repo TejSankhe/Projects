@@ -11,10 +11,10 @@ package entities;
  */
 public class Product {
     int id;
-    double min_price;
-    double max_price;
-    double target_price;
-    double popularity;
+    private double min_price;
+    private double max_price;
+    private double target_price;
+    private int popularity;
 
     public Product(int id, double min_price, double max_price, double target_price) {
         this.id = id;
@@ -55,11 +55,11 @@ public class Product {
         this.target_price = target_price;
     }
 
-    public double getPopularity() {
+    public int getPopularity() {
         return popularity;
     }
 
-    public void setPopularity(double popularity) {
+    public void setPopularity(int popularity) {
         this.popularity = popularity;
     }
     

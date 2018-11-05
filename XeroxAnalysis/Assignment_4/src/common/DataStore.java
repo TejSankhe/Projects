@@ -5,9 +5,11 @@
  */
 package common;
 
+import entities.Customer;
 import entities.Item;
 import entities.Order;
 import entities.Product;
+import entities.SalesPerson;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +23,25 @@ public class DataStore {
     private Map<Integer, Product> products;
     private Map<Integer, Order> orders;
     private Map<Integer, Item> items;
+    private Map<Integer, Customer> customers;
+    private Map<Integer, SalesPerson> salesPerson;
+
+    public void setCustomers(Map<Integer, Customer> customers) {
+        this.customers = customers;
+    }
+
+    public void setSalesPerson(Map<Integer, SalesPerson> salesPerson) {
+        this.salesPerson = salesPerson;
+    }
+    
+    
+    public Map<Integer, Customer> getCustomers() {
+        return customers;
+    }
+
+    public Map<Integer, SalesPerson> getSalesPerson() {
+        return salesPerson;
+    }
 
     public Map<Integer, Product> getProducts() {
         return products;
@@ -53,6 +74,8 @@ public class DataStore {
         products= new HashMap<>();
         orders= new HashMap<>();
         items= new HashMap<>();
+        customers= new HashMap<>();
+        salesPerson= new HashMap<>();
     }
     
     public static DataStore getInstance()
