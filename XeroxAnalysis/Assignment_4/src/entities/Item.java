@@ -10,11 +10,11 @@ package entities;
  * @author harshalneelkamal
  */
 public class Item {
-    int itemId;
-    int productId;
-    int salesPersonId;
-    double salesPrice;
-    int quantity;
+    private int itemId;
+    private int productId;
+    private int salesPersonId;
+    private double salesPrice;
+    private int quantity;
 
     public Item(int itemId, int productId, int salesPersonId, double salesPrice, int quantity) {
         this.itemId = itemId;

@@ -10,9 +10,9 @@ package entities;
  * @author samartha
  */
 public class SalesPerson {
-    int id;
-    int totalItemSold;
-    int totalpriceWRTTarget;
+    private int id;
+    private int totalItemSold;
+    private int totalpriceWRTTarget;
 
     public SalesPerson(int id) {
         this.id = id;

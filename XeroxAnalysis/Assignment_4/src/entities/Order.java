@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author harshalneelkamal
  */
 public class Order {
-    int orderId;
-    ArrayList Items;
-    int customerId;
+    private int orderId;
+    private ArrayList Items;
+    private int customerId;
 
     public Order(int orderId, ArrayList Items, int customerId) {
         this.orderId = orderId;
