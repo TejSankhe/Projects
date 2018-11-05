@@ -38,7 +38,8 @@ public class GateWay {
         while((prodRow = productReader.getNextRow()) != null){
             for (String row1 : prodRow) {
                 //Product newProduct= new Product();
-                System.out.println(row1);
+                //System.out.println());
+                
         }
         }
     }
