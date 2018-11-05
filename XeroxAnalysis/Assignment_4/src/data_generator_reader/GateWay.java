@@ -22,24 +22,20 @@ public class GateWay {
         //delete it once you understood.
         DataReader orderReader = new DataReader((Constants.ORDER_FILE_PATH));
         String[] orderRow;
-        printRow(orderReader.getFileHeader());
         while((orderRow = orderReader.getNextRow()) != null){
-            printRow(orderRow);
+            for (String row1 : orderRow) {
+            
+        }
         }
         System.out.println("_____________________________________________________________");
         DataReader productReader = new DataReader(Constants.PROD_CAT_PATH);
         String[] prodRow;
-        printRow(productReader.getFileHeader());
         while((prodRow = productReader.getNextRow()) != null){
-            printRow(prodRow);
+            for (String row1 : prodRow) {
+            
+        }
         }
     }
-    
-    public static void printRow(String[] row){
-        for (String row1 : row) {
-            System.out.print(row1 + ", ");
-        }
-        System.out.println("");
-    }
+
     
 }
