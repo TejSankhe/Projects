@@ -32,6 +32,8 @@ public class GateWay {
                 Product newProduct= new Product(Integer.parseInt(prodRow[0]),Integer.parseInt(prodRow[1]),Integer.parseInt(prodRow[2]),Integer.parseInt(prodRow[3]));
                  products.put(Integer.parseInt(prodRow[0]), newProduct);  
         }
+        Map<Integer, SalesPerson> salespersonList = DataStore.getInstance().getSalesPerson();
+        Map<Integer, Customer> customers = DataStore.getInstance().getCustomers();
         while((orderRow = orderReader.getNextRow()) != null){
             int producId=Integer.parseInt(orderRow[2]);
             Product pro= products.get(producId);
@@ -45,10 +47,14 @@ public class GateWay {
             else{
             ArrayList<Item> itemsList = new ArrayList<>();
             Item item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
+            Customer customer = new Customer(Integer.parseInt(orderRow[5]));
+            SalesPerson salesPerson= new SalesPerson((Integer.parseInt(orderRow[4])));
             itemsList.add(item);
             Order order = new Order(Integer.parseInt(orderRow[1]),itemsList,Integer.parseInt(orderRow[5]));
             orders.put(Integer.parseInt(orderRow[0]), order);
             items.put(Integer.parseInt(orderRow[1]), item); 
+            salespersonList.put(Integer.parseInt(orderRow[4]), salesPerson);
+            customers.put(Integer.parseInt(orderRow[5]), customer);
             }
         }
             
