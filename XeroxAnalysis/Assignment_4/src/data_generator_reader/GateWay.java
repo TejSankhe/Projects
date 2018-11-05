@@ -5,6 +5,8 @@
  */
 package data_generator_reader;
 
+
+import analytics.AnalysisHelper;
 import common.Constants;
 import common.DataStore;
 import entities.*;
@@ -65,8 +67,10 @@ public class GateWay {
             salespersonList.put(Integer.parseInt(orderRow[4]), salesPerson);
             customers.put(Integer.parseInt(orderRow[5]), customer);
         }
-            
+        AnalysisHelper analysisHelper= new AnalysisHelper();
+        analysisHelper.getThreeMostPopularProducts();
+        analysisHelper.getThreeMostPopularCustomers();
     }
-
+    
     
 }
