@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package assignment_4;
+package data_generator_reader;
 
+import common.Constants;
 import java.io.IOException;
 
 /**
@@ -13,21 +14,20 @@ import java.io.IOException;
  */
 public class GateWay {
     
-    public static void main(String args[]) throws IOException{
+    public static void main(String args[]) throws IOException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException{
         
-        DataGenerator generator = DataGenerator.getInstance();
+        //DataGenerator generator = DataGenerator.getInstance();
         
         //Below is the sample for how you can use reader. you might wanna 
         //delete it once you understood.
-        
-        DataReader orderReader = new DataReader(generator.getOrderFilePath());
+        DataReader orderReader = new DataReader((Constants.ORDER_FILE_PATH));
         String[] orderRow;
         printRow(orderReader.getFileHeader());
         while((orderRow = orderReader.getNextRow()) != null){
             printRow(orderRow);
         }
         System.out.println("_____________________________________________________________");
-        DataReader productReader = new DataReader(generator.getProductCataloguePath());
+        DataReader productReader = new DataReader(Constants.PROD_CAT_PATH);
         String[] prodRow;
         printRow(productReader.getFileHeader());
         while((prodRow = productReader.getNextRow()) != null){

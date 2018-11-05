@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package assignment_4.entities;
+package analytics;
 
 /**
  *
- * @author harshalneelkamal
+ * @author Admin
  */
-public class SalesPerson {
+public class AnalysisHelper {
     
 }
