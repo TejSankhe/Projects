@@ -38,6 +38,8 @@ public class GateWay {
         Map<Integer, Customer> customers = DataStore.getInstance().getCustomers();
         Item item;
         while((orderRow = orderReader.getNextRow()) != null){
+            
+            //Calculating Popularity
             int producId=Integer.parseInt(orderRow[2]);
             Product pro= products.get(producId);
             int tempPopularity= pro.getPopularity()+ Integer.parseInt(orderRow[3]);
@@ -75,8 +77,9 @@ public class GateWay {
             customers.put(Integer.parseInt(orderRow[5]), customer);
         }
         AnalysisHelper analysisHelper= new AnalysisHelper();
-        analysisHelper.getThreeMostPopularProducts();
         analysisHelper.getThreeMostPopularCustomers();
+        analysisHelper.getTopThreeSalesPerson();
+        analysisHelper.getTotalRevenueForTheYear();
     }
     
     
