@@ -7,8 +7,61 @@ package entities;
 
 /**
  *
- * @author samartha
+ * @author harshalneelkamal
  */
 public class Product {
+    int id;
+    double min_price;
+    double max_price;
+    double target_price;
+    double popularity;
+
+    public Product(int id, double min_price, double max_price, double target_price) {
+        this.id = id;
+        this.min_price = min_price;
+        this.max_price = max_price;
+        this.target_price = target_price;
+    }
     
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getMin_price() {
+        return min_price;
+    }
+
+    public void setMin_price(double min_price) {
+        this.min_price = min_price;
+    }
+
+    public double getMax_price() {
+        return max_price;
+    }
+
+    public void setMax_price(double max_price) {
+        this.max_price = max_price;
+    }
+
+    public double getTarget_price() {
+        return target_price;
+    }
+
+    public void setTarget_price(double target_price) {
+        this.target_price = target_price;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(double popularity) {
+        this.popularity = popularity;
+    }
+    
+        
 }

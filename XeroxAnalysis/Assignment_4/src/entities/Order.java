@@ -5,10 +5,45 @@
  */
 package entities;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author samartha
+ * @author harshalneelkamal
  */
 public class Order {
+    int orderId;
+    ArrayList Items;
+    int customerId;
+
+    public Order(int orderId, ArrayList Items, int customerId) {
+        this.orderId = orderId;
+        this.Items = Items;
+        this.customerId = customerId;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public ArrayList getItems() {
+        return Items;
+    }
+
+    public void setItems(ArrayList Items) {
+        this.Items = Items;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
     
 }
