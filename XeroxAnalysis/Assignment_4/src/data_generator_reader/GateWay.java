@@ -6,7 +6,11 @@
 package data_generator_reader;
 
 import common.Constants;
+import common.DataStore;
+import entities.Product;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -24,15 +28,17 @@ public class GateWay {
         String[] orderRow;
         while((orderRow = orderReader.getNextRow()) != null){
             for (String row1 : orderRow) {
-            
+                
         }
         }
         System.out.println("_____________________________________________________________");
         DataReader productReader = new DataReader(Constants.PROD_CAT_PATH);
         String[] prodRow;
+        Map<Integer, Product> products= DataStore.getInstance().getProducts();
         while((prodRow = productReader.getNextRow()) != null){
             for (String row1 : prodRow) {
-            
+                //Product newProduct= new Product();
+                System.out.println(row1);
         }
         }
     }

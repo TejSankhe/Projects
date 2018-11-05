@@ -8,6 +8,7 @@ package common;
 import entities.Item;
 import entities.Order;
 import entities.Product;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -49,7 +50,9 @@ public class DataStore {
     
     private DataStore()
     {
-        
+        products= new HashMap<>();
+        orders= new HashMap<>();
+        items= new HashMap<>();
     }
     
     public static DataStore getInstance()
