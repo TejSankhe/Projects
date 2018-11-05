@@ -7,8 +7,9 @@ package data_generator_reader;
 
 import common.Constants;
 import common.DataStore;
-import entities.Product;
+import entities.*;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,11 +27,23 @@ public class GateWay {
         //delete it once you understood.
         DataReader orderReader = new DataReader((Constants.ORDER_FILE_PATH));
         String[] orderRow;
+        Map<Integer, Order> orders = DataStore.getInstance().getOrders();
+        Map<Integer, Item> items = DataStore.getInstance().getItems();
         while((orderRow = orderReader.getNextRow()) != null){
-            for (String row1 : orderRow) {
-                
+            if(orders.containsKey(Integer.parseInt(orderRow[0]))){
+            Item item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
+            orders.get(Integer.parseInt(orderRow[0])).getItems().add(item);
+            }
+            else{
+            ArrayList<Item> itemsList = new ArrayList<>();
+            Item item = new Item(Integer.parseInt(orderRow[1]),Integer.parseInt(orderRow[2]),Integer.parseInt(orderRow[4]),Double.parseDouble(orderRow[6]),Integer.parseInt(orderRow[3]));
+            itemsList.add(item);
+            Order order = new Order(Integer.parseInt(orderRow[1]),itemsList,Integer.parseInt(orderRow[5]));
+            orders.put(Integer.parseInt(orderRow[0]), order);
+            items.put(Integer.parseInt(orderRow[1]), item); 
+            }
         }
-        }
+        System.out.println(orders.toString());
         System.out.println("_____________________________________________________________");
         DataReader productReader = new DataReader(Constants.PROD_CAT_PATH);
         String[] prodRow;
@@ -38,6 +51,7 @@ public class GateWay {
         while((prodRow = productReader.getNextRow()) != null){
                 Product newProduct= new Product(Integer.parseInt(prodRow[0]),Integer.parseInt(prodRow[1]),Integer.parseInt(prodRow[2]),Integer.parseInt(prodRow[3]));
                  products.put(Integer.parseInt(prodRow[0]), newProduct);
+              System.out.println("dg");   
         }
         
     }

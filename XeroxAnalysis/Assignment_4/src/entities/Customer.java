@@ -10,9 +10,9 @@ package entities;
  * @author harshalneelkamal
  */
 public class Customer {
-    int id;
-    long totalItemBought;
-    double totalPriceOfItemBought;
+    private int id;
+    private long totalItemBought;
+    private double totalPriceOfItemBought;
 
     public Customer(int id) {
         this.id = id;

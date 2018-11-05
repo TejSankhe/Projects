@@ -12,14 +12,24 @@ package entities;
 public class Item {
     int itemId;
     int productId;
+    int salesPersonId;
     double salesPrice;
     int quantity;
 
-    public Item(int itemId, int productId, double salesPrice, int quantity) {
+    public Item(int itemId, int productId, int salesPersonId, double salesPrice, int quantity) {
         this.itemId = itemId;
         this.productId = productId;
+        this.salesPersonId = salesPersonId;
         this.salesPrice = salesPrice;
         this.quantity = quantity;
+    }
+
+    public int getSalesPersonId() {
+        return salesPersonId;
+    }
+
+    public void setSalesPersonId(int salesPersonId) {
+        this.salesPersonId = salesPersonId;
     }
 
     public int getItemId() {
